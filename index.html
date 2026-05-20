@@ -6,6 +6,7 @@
 <title>Miguel Pellatiero — Portfólio</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="imagens/mg.png" type="image/x-icon">
 </head>
 </head>
 <body>
@@ -25,7 +26,17 @@
     <span class="status-dot"></span>
     Disponível para projetos
   </div>
+  <button class="menu-toggle" id="menuToggle">☰</button>
 </nav>
+
+<div class="nav-mobile" id="navMobile">
+  <ul>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#portfolio">Portfólio</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -141,33 +152,75 @@
 
 <!-- PORTFOLIO -->
 <section class="portfolio" id="portfolio">
+  <div class="portfolio-mobile-btn">
+    <button class="btn-open-gallery" onclick="openPortfolioGallery()">Ver Portfólio</button>
+  </div>
   <div class="portfolio-header reveal">
     <h2>TRABALHOS <span>SELECIONADOS</span></h2>
     <div class="filter-tabs">
       <button class="tab active" onclick="filterP('todos',this)">Todos</button>
-      <button class="tab" onclick="filterP('foto',this)">Fotografia</button>
       <button class="tab" onclick="filterP('sites',this)">Sites</button>
+      <button class="tab" onclick="filterP('foto',this)">Fotografia</button>
       <button class="tab" onclick="filterP('conteudo',this)">Conteúdo</button>
+      <button class="tab" onclick="filterP('design',this)">Design</button>
     </div>
   </div>
   <div class="portfolio-grid" id="pgrid">
 
+    <div class="p-item" data-cat="sites">
+      <div class="p-thumb">
+        <div class="p-thumb-inner" style="background-image: url('imagens/codsite.png');">
+          <div class="p-grid-lines"></div>
+          <span class="p-letter">W</span>
+        </div>
+        <div class="p-overlay">
+          <span class="p-cat">Sites · Web Development</span>
+          <p class="p-title">Código Site</p>
+          <p class="p-desc">Site responsivo e moderno com funcionalidades avançadas em frontend.</p>
+        </div>
+      </div>
+      <div class="p-info">
+        <span class="p-info-title">Código Site</span>
+        <span class="p-info-cat">Sites</span>
+        <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Ver projeto</a>
+      </div>
+    </div>
+
     <div class="p-item" data-cat="foto">
       <div class="p-thumb">
-        <div class="p-thumb-inner" style="background-image: url('imagens/Tempo\ limitado.png');">
+        <div class="p-thumb-inner" style="background-image: url('imagens/portfotografia.png');">
           <div class="p-grid-lines"></div>
           <span class="p-letter">F</span>
         </div>
         <div class="p-overlay">
-          <span class="p-cat">Fotografia · Retrato</span>
-          <p class="p-title">Ensaios Urbanos</p>
-          <p class="p-desc">Série de fotos autorais criada para contar histórias visuais com intenção.</p>
+          <span class="p-cat">Fotografia · Portfolio</span>
+          <p class="p-title">Ensaios Fotográficos</p>
+          <p class="p-desc">Coleção de trabalhos autorais em fotografia digital e composição criativa.</p>
         </div>
       </div>
       <div class="p-info">
-        <span class="p-info-title">Ensaios Urbanos</span>
+        <span class="p-info-title">Ensaios Fotográficos</span>
         <span class="p-info-cat">Fotografia</span>
-        <a class="p-link" href="https://example.com/ensaios-urbanos" target="_blank" rel="noreferrer noopener">Ver projeto</a>
+        <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Ver projeto</a>
+      </div>
+    </div>
+
+    <div class="p-item" data-cat="sites">
+      <div class="p-thumb">
+        <div class="p-thumb-inner" style="background-image: url('imagens/jogosite.png');">
+          <div class="p-grid-lines"></div>
+          <span class="p-letter">G</span>
+        </div>
+        <div class="p-overlay">
+          <span class="p-cat">Sites · Interactive</span>
+          <p class="p-title">Jogo Web</p>
+          <p class="p-desc">Plataforma interativa desenvolvida com JavaScript e design responsivo.</p>
+        </div>
+      </div>
+      <div class="p-info">
+        <span class="p-info-title">Jogo Web</span>
+        <span class="p-info-cat">Sites</span>
+        <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Ver projeto</a>
       </div>
     </div>
 
@@ -178,34 +231,72 @@
           <span class="p-letter">C</span>
         </div>
         <div class="p-overlay">
-          <span class="p-cat">Conteúdo · Canva / CapCut</span>
-          <p class="p-title">Reels & Social</p>
-          <p class="p-desc">Criação de conteúdo visual e vídeos prontos para redes sociais e campanhas.</p>
+          <span class="p-cat">Conteúdo · Social Media</span>
+          <p class="p-title">Banners & Reels</p>
+          <p class="p-desc">Criação de conteúdo visual dinâmico para redes sociais e campanhas digitais.</p>
         </div>
       </div>
       <div class="p-info">
-        <span class="p-info-title">Reels & Social</span>
+        <span class="p-info-title">Banners & Reels</span>
         <span class="p-info-cat">Conteúdo</span>
-        <a class="p-link" href="https://example.com/reels-social" target="_blank" rel="noreferrer noopener">Ver projeto</a>
+        <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Ver projeto</a>
       </div>
     </div>
 
     <div class="p-item" data-cat="sites">
       <div class="p-thumb">
-        <div class="p-thumb-inner" style="background-image: url('imagens/cardapiopeg.png');">
+        <div class="p-thumb-inner" style="background-image: url('imagens/homepeg.png');">
           <div class="p-grid-lines"></div>
-          <span class="p-letter">S</span>
+          <span class="p-letter">H</span>
         </div>
         <div class="p-overlay">
           <span class="p-cat">Sites · Web Design</span>
-          <p class="p-title">Landing One</p>
-          <p class="p-desc">Site responsivo com foco em clareza, usabilidade e presença de marca.</p>
+          <p class="p-title">HomePage Profissional</p>
+          <p class="p-desc">Landing page com design moderno e otimização para conversão.</p>
         </div>
       </div>
       <div class="p-info">
-        <span class="p-info-title">Landing One</span>
+        <span class="p-info-title">HomePage Profissional</span>
         <span class="p-info-cat">Sites</span>
-        <a class="p-link" href="https://landingone.example.com" target="_blank" rel="noreferrer noopener">Visitar site</a>
+        <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Visitar site</a>
+      </div>
+    </div>
+
+    <div class="p-item" data-cat="design">
+      <div class="p-thumb">
+        <div class="p-thumb-inner" style="background-image: url('imagens/Blue Minimalist Cleaning Company Logo.jpg');">
+          <div class="p-grid-lines"></div>
+          <span class="p-letter">L</span>
+        </div>
+        <div class="p-overlay">
+          <span class="p-cat">Design · Logo</span>
+          <p class="p-title">Logo Design</p>
+          <p class="p-desc">Identidade visual minimalista e profissional para empresas.</p>
+        </div>
+      </div>
+      <div class="p-info">
+        <span class="p-info-title">Logo Design</span>
+        <span class="p-info-cat">Design</span>
+        <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Ver projeto</a>
+      </div>
+    </div>
+
+    <div class="p-item" data-cat="conteudo">
+      <div class="p-thumb">
+        <div class="p-thumb-inner" style="background-image: url('imagens/doces mg.png');">
+          <div class="p-grid-lines"></div>
+          <span class="p-letter">D</span>
+        </div>
+        <div class="p-overlay">
+          <span class="p-cat">Conteúdo · Produto</span>
+          <p class="p-title">Campanha Doces MG</p>
+          <p class="p-desc">Fotografias e edições para apresentação de marca de confeitaria artesanal.</p>
+        </div>
+      </div>
+      <div class="p-info">
+        <span class="p-info-title">Campanha Doces MG</span>
+        <span class="p-info-cat">Conteúdo</span>
+        <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Ver projeto</a>
       </div>
     </div>
 
@@ -217,14 +308,14 @@
         </div>
         <div class="p-overlay">
           <span class="p-cat">Fotografia · Produto</span>
-          <p class="p-title">Fotografia de Produto</p>
-          <p class="p-desc">Imagens estratégicas para portfólio e divulgação de produtos com estilo.</p>
+          <p class="p-title">Fotografia de Produtos</p>
+          <p class="p-desc">Imagens profissionais com composição e iluminação estratégicas.</p>
         </div>
       </div>
       <div class="p-info">
-        <span class="p-info-title">Fotografia de Produto</span>
+        <span class="p-info-title">Fotografia de Produtos</span>
         <span class="p-info-cat">Fotografia</span>
-        <a class="p-link" href="https://example.com/fotografia-produto" target="_blank" rel="noreferrer noopener">Ver projeto</a>
+        <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Ver projeto</a>
       </div>
     </div>
 
@@ -232,56 +323,18 @@
       <div class="p-thumb">
         <div class="p-thumb-inner" style="background-image: url('imagens/peadsolucoes.png');">
           <div class="p-grid-lines"></div>
-          <span class="p-letter">W</span>
-        </div>
-        <div class="p-overlay">
-          <span class="p-cat">Sites · Brand Web</span>
-          <p class="p-title">Site Criativo</p>
-          <p class="p-desc">Projeto de site institucional com navegação fluida e estética moderna.</p>
-        </div>
-      </div>
-      <div class="p-info">
-        <span class="p-info-title">Site Criativo</span>
-        <span class="p-info-cat">Sites</span>
-        <a class="p-link" href="https://sitecriativo.example.com" target="_blank" rel="noreferrer noopener">Visitar site</a>
-      </div>
-    </div>
-
-    <div class="p-item" data-cat="sites">
-      <div class="p-thumb">
-        <div class="p-thumb-inner" style="background-image: url('imagens/cardapiopeg.png');">
-          <div class="p-grid-lines"></div>
           <span class="p-letter">S</span>
         </div>
         <div class="p-overlay">
-          <span class="p-cat">Sites · Turismo</span>
-          <p class="p-title">Portal São José</p>
-          <p class="p-desc">Site de divulgação turística inspirado na cidade de São José dos Campos.</p>
+          <span class="p-cat">Sites · Corporativo</span>
+          <p class="p-title">PEAD Soluções</p>
+          <p class="p-desc">Site institucional com design corporativo e navegação intuitiva.</p>
         </div>
       </div>
       <div class="p-info">
-        <span class="p-info-title">Portal São José</span>
+        <span class="p-info-title">PEAD Soluções</span>
         <span class="p-info-cat">Sites</span>
-        <a class="p-link" href="https://saojosedoscampos.example.com" target="_blank" rel="noreferrer noopener">Visitar site</a>
-      </div>
-    </div>
-
-    <div class="p-item" data-cat="conteudo">
-      <div class="p-thumb">
-        <div class="p-thumb-inner" style="background-image: url('imagens/baner.png');">
-          <div class="p-grid-lines"></div>
-          <span class="p-letter">T</span>
-        </div>
-        <div class="p-overlay">
-          <span class="p-cat">Conteúdo · Social</span>
-          <p class="p-title">Templates Sociais</p>
-          <p class="p-desc">Coleção de peças criadas no Canva e CapCut para redes sociais.</p>
-        </div>
-      </div>
-      <div class="p-info">
-        <span class="p-info-title">Templates Sociais</span>
-        <span class="p-info-cat">Conteúdo</span>
-        <a class="p-link" href="https://canva.com" target="_blank" rel="noreferrer noopener">Ver projeto</a>
+        <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Visitar site</a>
       </div>
     </div>
 
@@ -291,38 +344,38 @@
     <div class="portfolio-grid more-grid">
       <div class="p-item" data-cat="conteudo">
         <div class="p-thumb">
-          <div class="p-thumb-inner" style="background-image: url('imagens/baner.png');">
+          <div class="p-thumb-inner" style="background-image: url('imagens/Design sem nome.png');">
             <div class="p-grid-lines"></div>
-            <span class="p-letter">T</span>
+            <span class="p-letter">V</span>
           </div>
           <div class="p-overlay">
-            <span class="p-cat">Conteúdo · Social</span>
-            <p class="p-title">Templates Sociais</p>
-            <p class="p-desc">Peças para redes sociais criadas com Canva e editadas em CapCut.</p>
+            <span class="p-cat">Conteúdo · Criativo</span>
+            <p class="p-title">Designs Autorais</p>
+            <p class="p-desc">Peças de design criativo desenvolvidas com inovação visual.</p>
           </div>
         </div>
         <div class="p-info">
-          <span class="p-info-title">Templates Sociais</span>
+          <span class="p-info-title">Designs Autorais</span>
           <span class="p-info-cat">Conteúdo</span>
-          <a class="p-link" href="https://example.com/templates-sociais" target="_blank" rel="noreferrer noopener">Ver projeto</a>
+          <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Ver projeto</a>
         </div>
       </div>
       <div class="p-item" data-cat="foto">
         <div class="p-thumb">
-          <div class="p-thumb-inner" style="background-image: url('imagens/Tempo\ limitado.png');">
+          <div class="p-thumb-inner" style="background-image: url('imagens/Tempo limitado.png');">
             <div class="p-grid-lines"></div>
-            <span class="p-letter">A</span>
+            <span class="p-letter">T</span>
           </div>
           <div class="p-overlay">
-            <span class="p-cat">Fotografia · Arquitetura</span>
-            <p class="p-title">Ambientes Urbanos</p>
-            <p class="p-desc">Registro fotográfico de espaços e arquitetura com olhar criativo.</p>
+            <span class="p-cat">Fotografia · Conceitual</span>
+            <p class="p-title">Conceitos Visuais</p>
+            <p class="p-desc">Trabalhos conceituais explorando luz, sombra e composição.</p>
           </div>
         </div>
         <div class="p-info">
-          <span class="p-info-title">Ambientes Urbanos</span>
+          <span class="p-info-title">Conceitos Visuais</span>
           <span class="p-info-cat">Fotografia</span>
-          <a class="p-link" href="https://example.com/ambientes-urbanos" target="_blank" rel="noreferrer noopener">Ver projeto</a>
+          <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Ver projeto</a>
         </div>
       </div>
       <div class="p-item" data-cat="sites">
@@ -332,15 +385,15 @@
             <span class="p-letter">P</span>
           </div>
           <div class="p-overlay">
-            <span class="p-cat">Sites · Portfólio</span>
-            <p class="p-title">Portfólio Visual</p>
-            <p class="p-desc">Site moderno para apresentar trabalhos e contatos com layout limpo.</p>
+            <span class="p-cat">Sites · E-commerce</span>
+            <p class="p-title">Cardápio Digital</p>
+            <p class="p-desc">Solução web interativa para gerenciamento e apresentação de cardápios.</p>
           </div>
         </div>
         <div class="p-info">
-          <span class="p-info-title">Portfólio Visual</span>
+          <span class="p-info-title">Cardápio Digital</span>
           <span class="p-info-cat">Sites</span>
-          <a class="p-link" href="https://example.com/portfolio-visual" target="_blank" rel="noreferrer noopener">Visitar site</a>
+          <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Visitar site</a>
         </div>
       </div>
     </div>
@@ -428,19 +481,44 @@
   <div class="contact-form reveal">
     <div class="f-group">
       <label>Nome</label>
-      <input type="text" placeholder="Seu nome">
+      <input id="contactName" type="text" placeholder="Seu nome">
     </div>
     <div class="f-group">
       <label>E-mail</label>
-      <input type="email" placeholder="seu@email.com">
+      <input id="contactEmail" type="email" placeholder="seu@email.com">
     </div>
     <div class="f-group">
       <label>Projeto</label>
-      <textarea rows="4" placeholder="Me conta sobre o projeto..."></textarea>
+      <textarea id="contactProject" rows="4" placeholder="Me conta sobre o projeto..."></textarea>
     </div>
-    <button class="btn-submit">Enviar Mensagem →</button>
+    <button type="button" class="btn-submit" onclick="sendWhatsAppMessage()">Enviar Mensagem →</button>
   </div>
 </section>
+
+<!-- PORTFOLIO MODAL -->
+<div class="portfolio-modal" id="portfolioModal">
+  <div class="modal-close" onclick="closePortfolioModal()">&times;</div>
+  <div class="modal-content">
+    <div class="modal-thumb">
+      <img id="modalImage" src="" alt="Projeto">
+    </div>
+    <div class="modal-info">
+      <span class="modal-cat" id="modalCat"></span>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-meta">
+        <span class="modal-label" id="modalLabel"></span>
+        <span class="modal-type" id="modalType"></span>
+      </div>
+      <a class="modal-link" id="modalLink" href="#" target="_blank" rel="noreferrer noopener"></a>
+    </div>
+    <div class="modal-nav">
+      <button class="modal-arrow modal-prev" onclick="prevPortfolioItem()">‹</button>
+      <span class="modal-counter"><span id="currentItem">1</span> / <span id="totalItems">1</span></span>
+      <button class="modal-arrow modal-next" onclick="nextPortfolioItem()">›</button>
+    </div>
+  </div>
+</div>
 
 <footer>
   <span class="f-logo">MIGUEL<span>.</span></span>
