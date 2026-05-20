@@ -169,7 +169,7 @@ function sendWhatsAppMessage(){
   const name=document.getElementById('contactName').value.trim();
   const email=document.getElementById('contactEmail').value.trim();
   const project=document.getElementById('contactProject').value.trim();
-  const whatsappNumber='5511999999999';
+  const whatsappNumber='5512992236923';
   const messageParts=[];
   if(name) messageParts.push(`Nome: ${name}`);
   if(email) messageParts.push(`E-mail: ${email}`);
