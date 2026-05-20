@@ -650,11 +650,11 @@ footer{
 @media(max-width:768px){
   .portfolio-grid{
     grid-template-columns:repeat(2,1fr);
-    gap:0.5rem;display:none;
+    gap:0.5rem;display:grid;
   }
   .p-item{
     aspect-ratio:1/1;
-    cursor:pointer;display:none;
+    cursor:pointer;display:block;
   }
   .p-thumb{
     padding-bottom:0;
