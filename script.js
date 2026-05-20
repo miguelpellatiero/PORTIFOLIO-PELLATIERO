@@ -172,7 +172,7 @@ function sendWhatsAppMessage(){
 <<<<<<< HEAD
   const whatsappNumber='5512992236923';
 =======
-  const whatsappNumber='5511999999999';
+  const whatsappNumber='5512992236923';
 >>>>>>> 2fa57d8b62e17fa5320e2a82d989ec40face9b76
   const messageParts=[];
   if(name) messageParts.push(`Nome: ${name}`);
