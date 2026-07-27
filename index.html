@@ -518,6 +518,30 @@
     </div>
   </div>
 </div>
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+  createChat({
+    webhookUrl: 'https://miguelpellatiero.app.n8n.cloud/webhook/fce88c05-226c-4d17-ae77-7fe9b60995dc/chat',
+    mode: 'window',              // janelinha flutuante no canto
+    showWelcomeScreen: false,
+    initialMessages: [
+      'Olá! 👋',
+      'Sou o assistente do portfólio. Posso falar sobre coberturas esportivas, serviços e orçamentos.'
+    ],
+    i18n: {
+      en: {
+        title: 'Fotografia Esportiva 📸',
+        subtitle: 'Tire suas dúvidas sobre coberturas e orçamentos.',
+        inputPlaceholder: 'Digite sua mensagem...',
+        getStarted: 'Nova conversa',
+        footer: '',
+        closeButtonTooltip: 'Fechar',
+      },
+    },
+  });
+</script>
 
 <footer>
   <span class="f-logo">MIGUEL<span>.</span></span>
@@ -528,30 +552,7 @@
     <a href="#">LinkedIn</a>
   </div>
 </footer>
-<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-<script type="module">
-  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
-  createChat({
-    webhookUrl: 'https://miguelpellatiero.app.n8n.cloud/webhook/fce88c05-226c-4d17-ae77-7fe9b60995dc/chat',
-    mode: 'window',
-    showWelcomeScreen: false,
-    initialMessages: [
-      'Olá! 👋',
-      'Sou o assistente do portfólio. Posso ajudar com serviços e orçamentos.'
-    ],
-    i18n: {
-      en: {
-        title: 'Miguel Pellatiero',
-        subtitle: 'Tire suas dúvidas sobre serviços e orçamentos.',
-        inputPlaceholder: 'Digite sua mensagem...',
-        getStarted: 'Nova conversa',
-        footer: '',
-        closeButtonTooltip: 'Fechar',
-      },
-    },
-  });
-</script>
 
 <script src="script.js"></script>
 </body>
