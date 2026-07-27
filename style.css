@@ -522,6 +522,37 @@ footer{
 .nav-mobile a:hover{color:var(--accent);}
 
 /* RESPONSIVE BREAKPOINTS */
+:root{
+  --chat--color--primary:#d6ff00;
+  --chat--color--primary-shade-50:#b9dc00;
+  --chat--color--primary--shade-100:#9fbe00;
+  --chat--color--secondary:#151515;
+  --chat--color-secondary-shade-50:#333;
+  --chat--color-dark:#111;
+  --chat--color-light:#f5f5f2;
+  --chat--window--width:min(400px, calc(100vw - 2rem));
+  --chat--window--height:min(600px, calc(100dvh - 7rem));
+  --chat--window--bottom:1rem;
+  --chat--window--right:1rem;
+  --chat--window--border-radius:12px;
+  --chat--toggle--size:60px;
+  --chat--header--background:#111;
+  --chat--header--color:#fff;
+  --chat--message--border-radius:10px;
+}
+
+@media(max-width:480px){
+  :root{
+    --chat--window--width:calc(100vw - 1.25rem);
+    --chat--window--height:calc(100dvh - 5.5rem);
+    --chat--window--bottom:.625rem;
+    --chat--window--right:.625rem;
+    --chat--window--margin-bottom:.625rem;
+    --chat--toggle--size:56px;
+    --chat--spacing:.75rem;
+  }
+}
+
 @media(max-width:1200px){
   nav{padding:1rem 1.5rem;}
   .nav-logo{font-size:1rem;}
