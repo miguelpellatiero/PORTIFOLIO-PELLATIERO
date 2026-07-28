@@ -1,559 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Miguel Pellatiero — Portfólio</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="projetos/mg.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Miguel Pellatiero Advocacia — atuação jurídica estratégica e atendimento próximo.">
+  <title>Miguel Pellatiero | Advocacia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="cursor"></div><div id="cursor-ring"></div>
 
-<div id="cursor"></div>
-<div id="cursor-ring"></div>
+  <nav>
+    <a href="#inicio" class="nav-logo">MIGUEL<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#sobre">O escritório</a></li><li><a href="#atuacao">Atuação</a></li><li><a href="#servicos">Diferenciais</a></li><li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="nav-status"><span class="status-dot"></span>Atendimento com hora marcada</div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+  </nav>
+  <div class="nav-mobile" id="navMobile"><ul>
+    <li><a href="#sobre">O escritório</a></li><li><a href="#atuacao">Atuação</a></li><li><a href="#servicos">Diferenciais</a></li><li><a href="#contato">Contato</a></li>
+  </ul></div>
 
-<nav>
-  <a href="#" class="nav-logo">MIGUEL<span>.</span></a>
-  <ul class="nav-links">
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#portfolio">Portfólio</a></li>
-    <li><a href="#servicos">Serviços</a></li>
-    <li><a href="#contato">Contato</a></li>
-  </ul>
-  <div class="nav-status">
-    <span class="status-dot"></span>
-    Disponível para projetos
-  </div>
-  <button class="menu-toggle" id="menuToggle">☰</button>
-</nav>
-
-<div class="nav-mobile" id="navMobile">
-  <ul>
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#portfolio">Portfólio</a></li>
-    <li><a href="#servicos">Serviços</a></li>
-    <li><a href="#contato">Contato</a></li>
-  </ul>
-</div>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-bg-grid"></div>
-  <div class="hero-main reveal">
-    <p class="hero-eyebrow">criando laços e aplicando criatividade</p>
-    <h1 class="hero-name">
-      MIGUEL<br>
-      <span class="accent-word">PELLAT</span>IERO
-    </h1>
-    <div class="hero-sub">
-      <p class="hero-tagline">Design que comunica.<br>Conteúdo que engaja.<br>Sites que convertem.<br>Fotografia que eterniza.</p>
-      <div class="hero-divider"></div>
-      <div class="hero-tags">
-        <span class="hero-tag">_ Design Visual</span>
-      <span class="hero-tag">_ Conteúdo (Canva / CapCut)</span>
-      <span class="hero-tag">_ Publicidade</span>
-      <span class="hero-tag">_ Fotografia</span>
-
-      </div>
-    </div>
-  </div>
-  <div class="hero-bottom reveal">
-    <div class="hero-cta-group">
-      <a href="#portfolio" class="btn-accent">Ver Portfólio</a>
-      <a href="#contato" class="btn-ghost">Entrar em contato →</a>
-    </div>
-    <div class="hero-scroll">
-      <div class="scroll-line"></div>
-      <span>Scroll</span>
-    </div>
-  </div>
-</section>
-
-<!-- MARQUEE -->
-<div class="marquee-wrap">
-  <div class="marquee-track">
-    <span class="marquee-item">Design Visual <span>✦</span></span>
-    <span class="marquee-item">Edição de Vídeo <span>✦</span></span>
-    <span class="marquee-item">Publicidade <span>✦</span></span>
-    <span class="marquee-item">Identidade Visual <span>✦</span></span>
-    <span class="marquee-item">Motion Graphics <span>✦</span></span>
-    <span class="marquee-item">Direção de Arte <span>✦</span></span>
-    <span class="marquee-item">Color Grading <span>✦</span></span>
-    <span class="marquee-item">Campanhas <span>✦</span></span>
-    <span class="marquee-item">Web com IA <span>✦</span></span>
-    <span class="marquee-item">Desenvolvimento Web <span>✦</span></span>
-    <span class="marquee-item">Design Visual <span>✦</span></span>
-    <span class="marquee-item">Edição de Vídeo <span>✦</span></span>
-    <span class="marquee-item">Publicidade <span>✦</span></span>
-    <span class="marquee-item">Identidade Visual <span>✦</span></span>
-    <span class="marquee-item">Motion Graphics <span>✦</span></span>
-    <span class="marquee-item">Direção de Arte <span>✦</span></span>
-    <span class="marquee-item">Color Grading <span>✦</span></span>
-    <span class="marquee-item">Campanhas <span>✦</span></span>
-    <span class="marquee-item">Web com IA <span>✦</span></span>
-    <span class="marquee-item">Desenvolvimento Web <span>✦</span></span>
-  </div>
-</div>
-
-<!-- ABOUT -->
-<section class="about" id="sobre">
-  <div>
-    <p class="about-label reveal">01 — Sobre</p>
-  </div>
-  <div class="about-content">
-    <h2 class="reveal">Estética com <em>propósito</em>,<br>criatividade com resultado.</h2>
-    <p class="reveal">Designer visual, editor de fotos e vídeos e criativo publicitário baseado em São Paulo. Trabalho na interseção entre arte e estratégia, criando projetos que têm tanto impacto visual quanto resultado real.</p>
-    <p class="reveal">Cada projeto é uma nova linguagem. Do conceito ao pixel final, do roteiro ao último frame.</p>
-    <div class="skills-grid reveal">
-      <div class="skill-cell">
-        <h4>Design</h4>
-        <ul>
-          <li>Identidade Visual</li>
-          <li>Design Editorial</li>
-          <li>Motion Graphics</li>
-          <li>UI / UX</li>
-          <li>Tipografia</li>
-        </ul>
-      </div>
-      <div class="skill-cell">
-        <h4>Vídeo</h4>
-        <ul>
-          <li>Edição intermediaria</li>
-          <li>Color Grading</li>
-          <li>Vídeos Institucionais</li>
-          <li>Reels & Social</li>
-        </ul>
-      </div>
-      <div class="skill-cell">
-        <h4>Publicidade</h4>
-        <ul>
-          <li>Campanhas 360°</li>
-          <li>Social Media</li>
-          <li>Direção de Arte</li>
-          <li>Conteúdo Digital</li>
-          <li>Brand Strategy</li>
-        </ul>
-      </div>
-      <div class="skill-cell">
-        <h4>Web & IA</h4>
-        <ul>
-          <li>Desenvolvimento Web</li>
-          <li>Programação Frontend</li>
-          <li>IA e Automação</li>
-          <li>Otimização Web</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PORTFOLIO -->
-<section class="portfolio" id="portfolio">
-  <div class="portfolio-mobile-btn">
-    <button class="btn-open-gallery" onclick="openPortfolioGallery()">Ver Portfólio</button>
-  </div>
-  <div class="portfolio-header reveal">
-    <h2>TRABALHOS <span>SELECIONADOS</span></h2>
-    <div class="filter-tabs">
-      <button class="tab active" onclick="filterP('todos',this)">Todos</button>
-      <button class="tab" onclick="filterP('sites',this)">Sites</button>
-      <button class="tab" onclick="filterP('foto',this)">Fotografia</button>
-      <button class="tab" onclick="filterP('conteudo',this)">Conteúdo</button>
-      <button class="tab" onclick="filterP('design',this)">Design</button>
-    </div>
-  </div>
-  <div class="portfolio-grid" id="pgrid">
-
-    <div class="p-item" data-cat="sites">
-      <div class="p-thumb">
-        <div class="p-thumb-inner" style="background-image: url('projetos/codsite.png');">
-          <div class="p-grid-lines"></div>
-          <span class="p-letter">W</span>
-        </div>
-        <div class="p-overlay">
-          <span class="p-cat">Sites · Web Development</span>
-          <p class="p-title">Código Site</p>
-          <p class="p-desc">Site responsivo e moderno com funcionalidades avançadas em frontend.</p>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-main reveal">
+        <p class="hero-eyebrow">ADVOCACIA ESTRATÉGICA · SÃO PAULO</p>
+        <h1 class="hero-name">MIGUEL<br><span class="accent-word">PELLAT</span>IERO</h1>
+        <div class="hero-sub">
+          <p class="hero-tagline">Direito com escuta.<br>Estratégia com clareza.<br>Defesa dos seus interesses.</p>
+          <div class="hero-divider"></div>
+          <div class="hero-tags"><span class="hero-tag">_ Consultoria jurídica</span><span class="hero-tag">_ Atendimento personalizado</span><span class="hero-tag">_ Atuação preventiva e contenciosa</span></div>
         </div>
       </div>
-      <div class="p-info">
-        <span class="p-info-title">Código Site</span>
-        <span class="p-info-cat">Sites</span>
-        <a class="p-link" href="https://miguelpellatiero.github.io/site-jogos/index.html" target="_blank" rel="noreferrer noopener">Ver projeto</a>
-      </div>
-    </div>
+      <div class="hero-bottom reveal"><div class="hero-cta-group"><a href="#contato" class="btn-accent">Agendar uma conversa</a><a href="#atuacao" class="btn-ghost">Conhecer a atuação →</a></div><div class="hero-scroll"><div class="scroll-line"></div><span>Scroll</span></div></div>
+    </section>
 
-    <div class="p-item" data-cat="foto">
-      <div class="p-thumb">
-        <div class="p-thumb-inner" style="background-image: url('projetos/portfotografia.png');">
-          <div class="p-grid-lines"></div>
-          <span class="p-letter">F</span>
-        </div>
-        <div class="p-overlay">
-          <span class="p-cat">Fotografia · Portfolio</span>
-          <p class="p-title">Ensaios Fotográficos</p>
-          <p class="p-desc">Coleção de trabalhos autorais em fotografia digital e composição criativa.</p>
-        </div>
-      </div>
-      <div class="p-info">
-        <span class="p-info-title">Ensaios Fotográficos</span>
-        <span class="p-info-cat">Fotografia</span>
-        <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Ver projeto</a>
-      </div>
-    </div>
+    <div class="marquee-wrap"><div class="marquee-track">
+      <span class="marquee-item">ÉTICA <span>✦</span></span><span class="marquee-item">ESTRATÉGIA <span>✦</span></span><span class="marquee-item">TRANSPARÊNCIA <span>✦</span></span><span class="marquee-item">PROXIMIDADE <span>✦</span></span><span class="marquee-item">SEGURANÇA JURÍDICA <span>✦</span></span><span class="marquee-item">ÉTICA <span>✦</span></span><span class="marquee-item">ESTRATÉGIA <span>✦</span></span><span class="marquee-item">TRANSPARÊNCIA <span>✦</span></span><span class="marquee-item">PROXIMIDADE <span>✦</span></span><span class="marquee-item">SEGURANÇA JURÍDICA <span>✦</span></span>
+    </div></div>
 
-    <div class="p-item" data-cat="sites">
-      <div class="p-thumb">
-        <div class="p-thumb-inner" style="background-image: url('projetos/jogosite.png');">
-          <div class="p-grid-lines"></div>
-          <span class="p-letter">G</span>
-        </div>
-        <div class="p-overlay">
-          <span class="p-cat">Sites · Interactive</span>
-          <p class="p-title">Jogo Web</p>
-          <p class="p-desc">Plataforma interativa desenvolvida com JavaScript e design responsivo.</p>
+    <section class="about" id="sobre">
+      <div><p class="about-label reveal">01 — O escritório</p></div>
+      <div class="about-content">
+        <h2 class="reveal">Orientação jurídica <em>clara</em>, decisões mais seguras.</h2>
+        <p class="reveal">Miguel Pellatiero Advocacia oferece uma atuação técnica, acessível e próxima. Cada demanda é analisada com atenção ao contexto, aos riscos e às alternativas possíveis.</p>
+        <p class="reveal">O compromisso é traduzir o Direito em caminhos objetivos, para que você ou sua empresa possam tomar decisões bem informadas.</p>
+        <div class="skills-grid reveal">
+          <div class="skill-cell"><h4>Abordagem</h4><ul><li>Escuta qualificada</li><li>Análise estratégica</li><li>Comunicação direta</li></ul></div>
+          <div class="skill-cell"><h4>Atendimento</h4><ul><li>Presencial e on-line</li><li>Hora marcada</li><li>Acompanhamento próximo</li></ul></div>
+          <div class="skill-cell"><h4>Atuação</h4><ul><li>Consultiva</li><li>Preventiva</li><li>Contenciosa</li></ul></div>
+          <div class="skill-cell"><h4>Compromisso</h4><ul><li>Ética profissional</li><li>Transparência</li><li>Confidencialidade</li></ul></div>
         </div>
       </div>
-      <div class="p-info">
-        <span class="p-info-title">Jogo Web</span>
-        <span class="p-info-cat">Sites</span>
-        <a class="p-link" href="https://miguelpellatiero.github.io/site-jogos/index.html" target="_blank" rel="noreferrer noopener">Ver projeto</a>
-      </div>
-    </div>
+    </section>
 
-    <div class="p-item" data-cat="conteudo">
-      <div class="p-thumb">
-        <div class="p-thumb-inner" style="background-image: url('projetos/baner.png');">
-          <div class="p-grid-lines"></div>
-          <span class="p-letter">C</span>
-        </div>
-        <div class="p-overlay">
-          <span class="p-cat">Conteúdo · Social Media</span>
-          <p class="p-title">Banners & Reels</p>
-          <p class="p-desc">Criação de conteúdo visual dinâmico para redes sociais e campanhas digitais.</p>
-        </div>
+    <section class="portfolio legal-practice" id="atuacao">
+      <div class="portfolio-header reveal"><h2>ÁREAS DE <span>ATUAÇÃO</span></h2><p class="section-intro">Soluções jurídicas construídas de acordo com a necessidade de cada caso.</p></div>
+      <div class="portfolio-grid" id="pgrid">
+        <article class="p-item" data-cat="civil"><div class="p-thumb legal-thumb"><div class="p-thumb-inner"><div class="p-grid-lines"></div><span class="p-letter">C</span></div><div class="p-overlay"><span class="p-cat">01 · CONSULTIVO E CONTENCIOSO</span><p class="p-title">Direito Civil</p><p class="p-desc">Orientação em contratos, responsabilidade civil, obrigações e conflitos patrimoniais.</p></div></div><div class="p-info"><span class="p-info-title">Direito Civil</span><span class="p-info-cat">Consultivo & contencioso</span></div></article>
+        <article class="p-item" data-cat="empresarial"><div class="p-thumb legal-thumb"><div class="p-thumb-inner"><div class="p-grid-lines"></div><span class="p-letter">E</span></div><div class="p-overlay"><span class="p-cat">02 · PREVENÇÃO E ESTRATÉGIA</span><p class="p-title">Direito Empresarial</p><p class="p-desc">Suporte jurídico para empresas, negociações, contratos e organização de riscos.</p></div></div><div class="p-info"><span class="p-info-title">Direito Empresarial</span><span class="p-info-cat">Empresas & negócios</span></div></article>
+        <article class="p-item" data-cat="trabalhista"><div class="p-thumb legal-thumb"><div class="p-thumb-inner"><div class="p-grid-lines"></div><span class="p-letter">T</span></div><div class="p-overlay"><span class="p-cat">03 · RELAÇÕES DE TRABALHO</span><p class="p-title">Direito do Trabalho</p><p class="p-desc">Assessoria em relações trabalhistas, prevenção de passivos e defesa de interesses.</p></div></div><div class="p-info"><span class="p-info-title">Direito do Trabalho</span><span class="p-info-cat">Relações de trabalho</span></div></article>
+        <article class="p-item" data-cat="familia"><div class="p-thumb legal-thumb"><div class="p-thumb-inner"><div class="p-grid-lines"></div><span class="p-letter">F</span></div><div class="p-overlay"><span class="p-cat">04 · SOLUÇÕES SENSÍVEIS</span><p class="p-title">Família e Sucessões</p><p class="p-desc">Condução cuidadosa de demandas familiares, planejamento sucessório e patrimônio.</p></div></div><div class="p-info"><span class="p-info-title">Família e Sucessões</span><span class="p-info-cat">Atendimento humanizado</span></div></article>
       </div>
-      <div class="p-info">
-        <span class="p-info-title">Banners & Reels</span>
-        <span class="p-info-cat">Conteúdo</span>
-        <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Ver projeto</a>
-      </div>
-    </div>
+      <p class="legal-note reveal">A definição da estratégia jurídica depende da análise individual de cada situação. Este site tem caráter exclusivamente informativo.</p>
+    </section>
 
-    <div class="p-item" data-cat="sites">
-      <div class="p-thumb">
-        <div class="p-thumb-inner" style="background-image: url('projetos/homepeg.png');">
-          <div class="p-grid-lines"></div>
-          <span class="p-letter">H</span>
-        </div>
-        <div class="p-overlay">
-          <span class="p-cat">Sites · Web Design</span>
-          <p class="p-title">HomePage Profissional</p>
-          <p class="p-desc">Landing page com design moderno e otimização para conversão.</p>
-        </div>
+    <section class="services" id="servicos">
+      <div class="services-top reveal"><h2>COMO<br><span>ATUAMOS</span></h2><p>Um processo organizado, com informação clara e foco na proteção dos seus interesses em cada etapa.</p></div>
+      <div class="services-list">
+        <div class="service-row reveal"><div class="service-left"><span class="service-num">01</span><span class="service-name">Entendimento do caso</span></div><div class="service-tags"><span class="service-tag-sm">Escuta</span><span class="service-tag-sm">Contexto</span><span class="service-tag-sm">Documentos</span></div><span class="service-arrow">→</span></div>
+        <div class="service-row reveal"><div class="service-left"><span class="service-num">02</span><span class="service-name">Análise e estratégia</span></div><div class="service-tags"><span class="service-tag-sm">Riscos</span><span class="service-tag-sm">Alternativas</span><span class="service-tag-sm">Planejamento</span></div><span class="service-arrow">→</span></div>
+        <div class="service-row reveal"><div class="service-left"><span class="service-num">03</span><span class="service-name">Condução transparente</span></div><div class="service-tags"><span class="service-tag-sm">Orientação</span><span class="service-tag-sm">Prazos</span><span class="service-tag-sm">Atualizações</span></div><span class="service-arrow">→</span></div>
+        <div class="service-row reveal"><div class="service-left"><span class="service-num">04</span><span class="service-name">Acompanhamento próximo</span></div><div class="service-tags"><span class="service-tag-sm">Disponibilidade</span><span class="service-tag-sm">Clareza</span><span class="service-tag-sm">Confiança</span></div><span class="service-arrow">→</span></div>
       </div>
-      <div class="p-info">
-        <span class="p-info-title">HomePage Profissional</span>
-        <span class="p-info-cat">Sites</span>
-        <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Visitar site</a>
-      </div>
-    </div>
+    </section>
 
-    <div class="p-item" data-cat="design">
-      <div class="p-thumb">
-        <div class="p-thumb-inner" style="background-image: url('projetos/Blue Minimalist Cleaning Company Logo.jpg');">
-          <div class="p-grid-lines"></div>
-          <span class="p-letter">L</span>
-        </div>
-        <div class="p-overlay">
-          <span class="p-cat">Design · Logo</span>
-          <p class="p-title">Logo Design</p>
-          <p class="p-desc">Identidade visual minimalista e profissional para empresas.</p>
-        </div>
-      </div>
-      <div class="p-info">
-        <span class="p-info-title">Logo Design</span>
-        <span class="p-info-cat">Design</span>
-        <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Ver projeto</a>
-      </div>
-    </div>
+    <section class="contact" id="contato">
+      <div class="contact-left reveal"><h2>VAMOS<br>CONVERSAR<br><span>SOBRE SEU CASO</span></h2><p>Conte brevemente sua necessidade. O primeiro contato é o ponto de partida para avaliarmos a melhor forma de atendimento.</p><div class="contact-links"><a href="mailto:contato@miguelpellatiero.adv.br" class="c-link"><span class="c-link-label">E-mail</span><span class="c-link-value">contato@miguelpellatiero.adv.br</span></a><span class="c-link"><span class="c-link-label">Atendimento</span><span class="c-link-value">São Paulo · On-line</span></span><span class="c-link"><span class="c-link-label">Registro profissional</span><span class="c-link-value">OAB/UF 000.000</span></span></div></div>
+      <form class="contact-form reveal" onsubmit="sendWhatsAppMessage(event)"><div class="f-group"><label for="contactName">Nome</label><input id="contactName" type="text" placeholder="Seu nome" required></div><div class="f-group"><label for="contactEmail">E-mail</label><input id="contactEmail" type="email" placeholder="seu@email.com" required></div><div class="f-group"><label for="contactProject">Como podemos ajudar?</label><textarea id="contactProject" rows="4" placeholder="Descreva sua necessidade, sem enviar dados sensíveis."></textarea></div><button type="submit" class="btn-submit">Solicitar contato →</button></form>
+    </section>
+  </main>
 
-    <div class="p-item" data-cat="conteudo">
-      <div class="p-thumb">
-        <div class="p-thumb-inner" style="background-image: url('projetos/doces mg.png');">
-          <div class="p-grid-lines"></div>
-          <span class="p-letter">D</span>
-        </div>
-        <div class="p-overlay">
-          <span class="p-cat">Conteúdo · Produto</span>
-          <p class="p-title">Campanha Doces MG</p>
-          <p class="p-desc">Fotografias e edições para apresentação de marca de confeitaria artesanal.</p>
-        </div>
-      </div>
-      <div class="p-info">
-        <span class="p-info-title">Campanha Doces MG</span>
-        <span class="p-info-cat">Conteúdo</span>
-        <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Ver projeto</a>
-      </div>
-    </div>
-
-    <div class="p-item" data-cat="foto">
-      <div class="p-thumb">
-        <div class="p-thumb-inner" style="background-image: url('projetos/Games.jpg');">
-          <div class="p-grid-lines"></div>
-          <span class="p-letter">P</span>
-        </div>
-        <div class="p-overlay">
-          <span class="p-cat">Fotografia · Produto</span>
-          <p class="p-title">Fotografia de Produtos</p>
-          <p class="p-desc">Imagens profissionais com composição e iluminação estratégicas.</p>
-        </div>
-      </div>
-      <div class="p-info">
-        <span class="p-info-title">Fotografia de Produtos</span>
-        <span class="p-info-cat">Fotografia</span>
-        <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Ver projeto</a>
-      </div>
-    </div>
-
-    <div class="p-item" data-cat="sites">
-      <div class="p-thumb">
-        <div class="p-thumb-inner" style="background-image: url('projetos/peadsolucoes.png');">
-          <div class="p-grid-lines"></div>
-          <span class="p-letter">S</span>
-        </div>
-        <div class="p-overlay">
-          <span class="p-cat">Sites · Corporativo</span>
-          <p class="p-title">PEAD Soluções</p>
-          <p class="p-desc">Site institucional com design corporativo e navegação intuitiva.</p>
-        </div>
-      </div>
-      <div class="p-info">
-        <span class="p-info-title">PEAD Soluções</span>
-        <span class="p-info-cat">Sites</span>
-        <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Visitar site</a>
-      </div>
-    </div>
-
-  </div>
-  <div class="portfolio-more reveal" id="more-projects">
-    <p class="section-label">Mais projetos</p>
-    <div class="portfolio-grid more-grid">
-      <div class="p-item" data-cat="conteudo">
-        <div class="p-thumb">
-          <div class="p-thumb-inner" style="background-image: url('projetos/Design sem nome.png');">
-            <div class="p-grid-lines"></div>
-            <span class="p-letter">V</span>
-          </div>
-          <div class="p-overlay">
-            <span class="p-cat">Conteúdo · Criativo</span>
-            <p class="p-title">Designs Autorais</p>
-            <p class="p-desc">Peças de design criativo desenvolvidas com inovação visual.</p>
-          </div>
-        </div>
-        <div class="p-info">
-          <span class="p-info-title">Designs Autorais</span>
-          <span class="p-info-cat">Conteúdo</span>
-          <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Ver projeto</a>
-        </div>
-      </div>
-      <div class="p-item" data-cat="foto">
-        <div class="p-thumb">
-          <div class="p-thumb-inner" style="background-image: url('projetos/Tempo limitado.png');">
-            <div class="p-grid-lines"></div>
-            <span class="p-letter">T</span>
-          </div>
-          <div class="p-overlay">
-            <span class="p-cat">Fotografia · Conceitual</span>
-            <p class="p-title">Conceitos Visuais</p>
-            <p class="p-desc">Trabalhos conceituais explorando luz, sombra e composição.</p>
-          </div>
-        </div>
-        <div class="p-info">
-          <span class="p-info-title">Conceitos Visuais</span>
-          <span class="p-info-cat">Fotografia</span>
-          <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Ver projeto</a>
-        </div>
-      </div>
-      <div class="p-item" data-cat="sites">
-        <div class="p-thumb">
-          <div class="p-thumb-inner" style="background-image: url('projetos/cardapiopeg.png');">
-            <div class="p-grid-lines"></div>
-            <span class="p-letter">P</span>
-          </div>
-          <div class="p-overlay">
-            <span class="p-cat">Sites · E-commerce</span>
-            <p class="p-title">Cardápio Digital</p>
-            <p class="p-desc">Solução web interativa para gerenciamento e apresentação de cardápios.</p>
-          </div>
-        </div>
-        <div class="p-info">
-          <span class="p-info-title">Cardápio Digital</span>
-          <span class="p-info-cat">Sites</span>
-          <a class="p-link" href="#" target="_blank" rel="noreferrer noopener">Visitar site</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section class="services" id="servicos">
-  <div class="services-top reveal">
-    <h2>O QUE EU<br><span>FAÇO</span></h2>
-    <p>Do briefing à entrega final. Trabalho em todas as etapas do processo criativo com foco em resultado e estética.</p>
-  </div>
-  <div class="services-list">
-    <div class="service-row reveal">
-      <div class="service-left">
-        <span class="service-num">01</span>
-        <span class="service-name">Design Visual</span>
-      </div>
-      <div class="service-tags">
-        <span class="service-tag-sm">Identidade</span>
-        <span class="service-tag-sm">Editorial</span>
-        <span class="service-tag-sm">Marca</span>
-      </div>
-      <span class="service-arrow">→</span>
-    </div>
-    <div class="service-row reveal">
-      <div class="service-left">
-        <span class="service-num">02</span>
-        <span class="service-name">Fotografia Criativa</span>
-      </div>
-      <div class="service-tags">
-        <span class="service-tag-sm">Retratos</span>
-        <span class="service-tag-sm">Produto</span>
-        <span class="service-tag-sm">Editorial</span>
-      </div>
-      <span class="service-arrow">→</span>
-    </div>
-    <div class="service-row reveal">
-      <div class="service-left">
-        <span class="service-num">03</span>
-        <span class="service-name">Conteúdo Digital</span>
-      </div>
-      <div class="service-tags">
-        <span class="service-tag-sm">Canva</span>
-        <span class="service-tag-sm">CapCut</span>
-        <span class="service-tag-sm">Reels</span>
-      </div>
-      <span class="service-arrow">→</span>
-    </div>
-    <div class="service-row reveal">
-      <div class="service-left">
-        <span class="service-num">04</span>
-        <span class="service-name">Sites com IA</span>
-      </div>
-      <div class="service-tags">
-        <span class="service-tag-sm">Landing Pages</span>
-        <span class="service-tag-sm">Web</span>
-        <span class="service-tag-sm">Otimização</span>
-      </div>
-      <span class="service-arrow">→</span>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contato">
-  <div class="contact-left reveal">
-    <h2>VAMOS<br>CRIAR<br><span>JUNTOS</span></h2>
-    <p>Tem um projeto em mente? Me conta. Estou sempre aberto a novos desafios, colaborações e conversas criativas.</p>
-    <div class="contact-links">
-      <a href="mailto:miguel@pellatiero.com" class="c-link">
-        <span class="c-link-label">E-mail</span>
-        <span class="c-link-value">mpellatiero@gmail.com
-</span>
-      </a>
-      <a href="https://www.instagram.com/mg_pll/" class="c-link" target="_blank" rel="noreferrer noopener">
-        <span class="c-link-label">Instagram</span>
-        <span class="c-link-value">mg_pll</span>
-      </a>
-      <a href="#" class="c-link">
-        <span class="c-link-label">Localização</span>
-        <span class="c-link-value">S J campos, São Paulo, Brasil</span>
-      </a>
-    </div>
-  </div>
-  <div class="contact-form reveal">
-    <div class="f-group">
-      <label>Nome</label>
-      <input id="contactName" type="text" placeholder="Seu nome">
-    </div>
-    <div class="f-group">
-      <label>E-mail</label>
-      <input id="contactEmail" type="email" placeholder="seu@email.com">
-    </div>
-    <div class="f-group">
-      <label>Projeto</label>
-      <textarea id="contactProject" rows="4" placeholder="Me conta sobre o projeto..."></textarea>
-    </div>
-    <button type="button" class="btn-submit" onclick="sendWhatsAppMessage()">Enviar Mensagem →</button>
-  </div>
-</section>
-
-<!-- PORTFOLIO MODAL -->
-<div class="portfolio-modal" id="portfolioModal">
-  <div class="modal-close" onclick="closePortfolioModal()">&times;</div>
-  <div class="modal-content">
-    <div class="modal-thumb">
-      <img id="modalImage" src="" alt="Projeto">
-    </div>
-    <div class="modal-info">
-      <span class="modal-cat" id="modalCat"></span>
-      <h3 class="modal-title" id="modalTitle"></h3>
-      <p class="modal-desc" id="modalDesc"></p>
-      <div class="modal-meta">
-        <span class="modal-label" id="modalLabel"></span>
-        <span class="modal-type" id="modalType"></span>
-      </div>
-      <a class="modal-link" id="modalLink" href="#" target="_blank" rel="noreferrer noopener"></a>
-    </div>
-    <div class="modal-nav">
-      <button class="modal-arrow modal-prev" onclick="prevPortfolioItem()">‹</button>
-      <span class="modal-counter"><span id="currentItem">1</span> / <span id="totalItems">1</span></span>
-      <button class="modal-arrow modal-next" onclick="nextPortfolioItem()">›</button>
-    </div>
-  </div>
-</div>
-<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-<script type="module">
-  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-
-  createChat({
-    webhookUrl: 'https://miguelpellatiero.app.n8n.cloud/webhook/fce88c05-226c-4d17-ae77-7fe9b60995dc/chat',
-    mode: 'window',              // janelinha flutuante no canto
-    showWelcomeScreen: false,
-    initialMessages: [
-      'Olá! 👋',
-      'Sou o assistente do portfólio. Posso falar sobre coberturas esportivas, serviços e orçamentos.'
-    ],
-    i18n: {
-      en: {
-        title: 'Fotografia Esportiva 📸',
-        subtitle: 'Tire suas dúvidas sobre coberturas e orçamentos.',
-        inputPlaceholder: 'Digite sua mensagem...',
-        getStarted: 'Nova conversa',
-        footer: '',
-        closeButtonTooltip: 'Fechar',
-      },
-    },
-  });
-</script>
-
-<footer>
-  <span class="f-logo">MIGUEL<span>.</span></span>
-  <span class="f-copy">© 2025 — Todos os direitos reservados</span>
-  <div class="f-socials">
-    <a href="https://www.instagram.com/mg_pll/">Instagram</a>
-    <a href="#">Behance</a>
-    <a href="#">LinkedIn</a>
-  </div>
-</footer>
-
-
-<script src="script.js"></script>
+  <footer><span class="f-logo">MIGUEL<span>.</span></span><span class="f-copy">© 2026 — Todos os direitos reservados</span><div class="f-socials"><a href="#inicio">Início</a><a href="#atuacao">Atuação</a><a href="#contato">Contato</a></div></footer>
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet">
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+    createChat({ webhookUrl: 'https://miguelpellatiero.app.n8n.cloud/webhook/fce88c05-226c-4d17-ae77-7fe9b60995dc/chat', mode: 'window', showWelcomeScreen: false, initialMessages: ['Olá! Sou o assistente virtual do escritório.', 'Posso ajudar com informações iniciais sobre áreas de atuação e canais de contato.'], i18n: { en: { title: 'Atendimento inicial', subtitle: 'Informações gerais — não envie dados sensíveis.', inputPlaceholder: 'Digite sua mensagem...', getStarted: 'Nova conversa', footer: '', closeButtonTooltip: 'Fechar' } } });
+  </script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -817,3 +817,72 @@ footer{
   .modal-nav{gap:0.75rem;padding:0.75rem;}
   .modal-arrow{width:2rem;height:2rem;font-size:1rem;}
 }
+
+/* LEGAL PORTFOLIO + COMPACT CHAT */
+.section-intro{
+  max-width:310px;font-size:.63rem;line-height:1.9;
+  color:var(--white-dim);letter-spacing:.03em;
+}
+.legal-practice .portfolio-grid{padding-top:1rem;}
+.legal-practice .p-item{border:1px solid var(--border);}
+.legal-practice .p-thumb{padding-bottom:88%;}
+.legal-practice .p-thumb-inner{
+  background:
+    radial-gradient(circle at 78% 18%, rgba(200,255,0,.12), transparent 30%),
+    linear-gradient(135deg, #171717 0%, #090909 70%);
+}
+.legal-practice .p-letter{font-size:9rem;color:rgba(240,237,232,.09);}
+.legal-practice .p-item:nth-child(1) .p-letter{font-size:9rem;}
+.legal-practice .p-overlay{opacity:1;}
+.legal-practice .p-info{min-height:76px;}
+.legal-note{
+  max-width:620px;margin:2rem auto 0;text-align:center;
+  font-size:.52rem;line-height:1.8;letter-spacing:.05em;color:var(--white-faint);
+}
+
+/* The n8n component is controlled through its public theme variables. */
+:root{
+  --chat--window--width:min(340px, calc(100vw - 2rem));
+  --chat--window--height:min(500px, calc(100dvh - 6rem));
+  --chat--window--bottom:1rem;
+  --chat--window--right:1rem;
+  --chat--window--border-radius:16px;
+  --chat--toggle--size:48px;
+  --chat--header--background:#111;
+  --chat--header--color:#f0ede8;
+  --chat--message--border-radius:12px;
+  --chat--spacing:.75rem;
+}
+.n8n-chat, .n8n-chat *{font-family:'Space Mono',monospace!important;}
+.n8n-chat .chat-window{
+  border:1px solid rgba(240,237,232,.13)!important;
+  box-shadow:0 20px 60px rgba(0,0,0,.45)!important;
+}
+.n8n-chat .chat-header{border-bottom:1px solid rgba(240,237,232,.08)!important;}
+.n8n-chat .chat-inputs textarea{font-size:.7rem!important;}
+
+@media(max-width:768px){
+  .portfolio-header{display:flex;align-items:flex-start;gap:1.25rem;flex-direction:column;}
+  .legal-practice .portfolio-grid{display:grid;}
+  .legal-practice .p-item{aspect-ratio:auto;}
+  .legal-practice .p-thumb{height:auto;padding-bottom:82%;}
+  .legal-practice .p-info{display:flex;padding:1rem;min-height:70px;}
+  .legal-practice .p-overlay{padding:1.25rem 1rem;}
+  .legal-practice .p-title{font-size:1.15rem;}
+  .legal-practice .p-desc{font-size:.5rem;}
+  .legal-practice .p-letter,.legal-practice .p-item:nth-child(1) .p-letter{font-size:5.5rem;}
+  .section-intro{font-size:.58rem;}
+  .legal-note{font-size:.48rem;margin-top:1.25rem;}
+}
+
+@media(max-width:480px){
+  :root{
+    --chat--window--width:calc(100vw - 1rem);
+    --chat--window--height:min(460px, calc(100dvh - 5rem));
+    --chat--window--bottom:.5rem;
+    --chat--window--right:.5rem;
+    --chat--toggle--size:46px;
+  }
+  .legal-practice .portfolio-grid{grid-template-columns:1fr;}
+  .legal-practice .p-thumb{padding-bottom:70%;}
+}
