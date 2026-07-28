@@ -88,7 +88,25 @@
   <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet">
   <script type="module">
     import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-    createChat({ webhookUrl: 'https://miguelpellatiero.app.n8n.cloud/webhook/fce88c05-226c-4d17-ae77-7fe9b60995dc/chat', mode: 'window', showWelcomeScreen: false, initialMessages: ['Olá! Sou o assistente virtual do escritório.', 'Posso ajudar com informações iniciais sobre áreas de atuação e canais de contato.'], i18n: { en: { title: 'Atendimento inicial', subtitle: 'Informações gerais — não envie dados sensíveis.', inputPlaceholder: 'Digite sua mensagem...', getStarted: 'Nova conversa', footer: '', closeButtonTooltip: 'Fechar' } } });
+    createChat({
+      webhookUrl: 'https://miguelpellatiero.app.n8n.cloud/webhook/fce88c05-226c-4d17-ae77-7fe9b60995dc/chat',
+      mode: 'window',
+      showWelcomeScreen: false,
+      initialMessages: [
+        'Olá! 👋',
+        'Sou o assistente do escritório. Como posso ajudar você hoje?'
+      ],
+      i18n: {
+        en: {
+          title: 'Assistente Jurídico',
+          subtitle: 'Tire suas dúvidas e agende sua consulta.',
+          inputPlaceholder: 'Digite sua mensagem...',
+          getStarted: 'Nova conversa',
+          footer: '',
+          closeButtonTooltip: 'Fechar'
+        }
+      }
+    });
   </script>
   <script src="script.js"></script>
 </body>
